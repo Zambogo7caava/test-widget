@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caava Widget Test</title>
+
+    <!-- Load React and ReactDOM from CDN -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+
+    <!-- Load Caava AI Widget from CDN -->
+    <script
+      src="https://unpkg.com/@caava-ai/widget@0.1.2/dist/widget.full.js.umd.js"
+      async
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <h1>Testing Caava AI Widget</h1>
+    <p>If everything is working, a floating chat button should appear in the bottom right.</p>
+
+    <!-- Floating Widget -->
+    <ai-assistant-widget
+      floating="true"
+      position="bottom-right"
+      button-size="medium"
+      button-icon="💬"
+      button-text="Chat with Alex - Customer Service Agent"
+      name="Alex - Customer Service Agent"
+      assistant-id="9367b4b0-1ec5-4875-b89c-93cb568316d3"
+      api-url="http://caava.192.0.0.123.nip.io/akili/proj_9367b4b0/web"
+      api-key="/* API key will be obtained from user session */"
+      enable-file-upload="true"
+      theme='{"primaryColor":"#000000","backgroundColor":"#ffffff"}'
+    ></ai-assistant-widget>
+  </body>
+</html>
