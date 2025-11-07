@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caava Widget Test</title>
+    
+    <!-- Load React and ReactDOM from CDN for the widget -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    
+    <!-- Load Caava AI Widget from CDN (must load after React) -->
+    <script
+      src="https://unpkg.com/@caava-ai/widget@0.1.2/dist/widget.full.js.umd.js"
+      type="text/javascript"
+      onerror="console.error('Failed to load widget script')"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Floating Widget - placed directly in body for auto-initialization -->
+    <ai-assistant-widget
+      floating="true"
+      position="bottom-right"
+      button-size="medium"
+      button-icon="💬"
+      button-text="Chat with Alex - Customer Service Agent"
+      name="Alex - Customer Service Agent"
+      assistant-id="9367b4b0-1ec5-4875-b89c-93cb568316d3"
+      api-url="http://caava.192.0.0.123.nip.io/akili/proj_9367b4b0/web"
+      api-key="/* API key will be obtained from user session */"
+      enable-file-upload="true"
+      theme='{"primaryColor":"#000000","backgroundColor":"#ffffff"}'
+    ></ai-assistant-widget>
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
