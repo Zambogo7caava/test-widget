@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
               name="Alex - Customer Service Agent"
               assistant-id="9367b4b0-1ec5-4875-b89c-93cb568316d3"
               api-url="http://caava.192.0.0.123.nip.io/akili/proj_9367b4b0/web"
-              api-key="/* API key will be obtained from user session */"
+              api-key="pk-akv1_O_7I67V9qw9vJmr626QvbrvSz5122YLX1a3PTVitt8Q"
               enable-file-upload="true"
               theme='{"primaryColor":"#000000","backgroundColor":"#ffffff"}'
             ></ai-assistant-widget>`,
