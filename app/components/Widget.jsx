@@ -49,7 +49,7 @@ export default function Widget() {
         widget.setAttribute('button-icon', '💬')
         widget.setAttribute('button-text', 'Chat with Alex - Customer Service Agent')
         widget.setAttribute('name', 'Alex - Customer Service Agent')
-        widget.setAttribute('assistant-id', '9367b4b0-1ec5-4875-b89c-93cb568316d3')
+        widget.setAttribute('assistant-id', '12daee86-5079-44cd-8157-758e90864137')
         widget.setAttribute('api-url', 'http://caava.192.0.0.123.nip.io/akili/proj_9367b4b0/web')
         widget.setAttribute('api-key', 'pk-akv1_O_7I67V9qw9vJmr626QvbrvSz5122YLX1a3PTVitt8Q')
         widget.setAttribute('enable-file-upload', 'true')
